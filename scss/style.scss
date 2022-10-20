@@ -11,17 +11,56 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: #ffffff;
   line-height: 1.6;
+  width: $Web-width;
+  margin: auto;
 }
-a{
+
+a {
   text-decoration: none;
   color: $dark-color;
 }
-ul{
+
+ul {
   list-style: none;
 }
-h2,h3,h4{
+
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
-img{
+
+img {
   width: 100%;
+}
+
+// Header
+header {
+
+  //Nav
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    ul {
+      display: flex;
+      .nav__item{
+        padding: 1rem;
+      }
+    }
+  }
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    width: 100%;
+    background:$background-img;
+    h1{
+      font-size: 4rem;
+    }
+  }
 }

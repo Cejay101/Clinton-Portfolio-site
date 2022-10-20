@@ -1,0 +1,27 @@
+@import 'config';
+//Generall styles
+
+// reset
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #ffffff;
+  line-height: 1.6;
+}
+a{
+  text-decoration: none;
+  color: $dark-color;
+}
+ul{
+  list-style: none;
+}
+h2,h3,h4{
+  text-transform: uppercase;
+}
+img{
+  width: 100%;
+}

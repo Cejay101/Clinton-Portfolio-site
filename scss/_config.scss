@@ -1,10 +1,13 @@
 // Declaring Variables
 
 $Web-width:1280px;
-$primary-color:#e9bcbc;
+$primary-color:#d27979;
 $light-color:#f4f4f4;
-$medium-color:#ccc;
+$medium-color:rgb(123, 123, 123);
 $dark-color:#333;
 $background-img:url('../img/pexels-gradienta-7130497.jpg');
 
 
+.underline{
+background:url(../dist/img/background-image.jpeg);
+}

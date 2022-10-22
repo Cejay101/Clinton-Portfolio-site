@@ -19,7 +19,7 @@ const handleHover = function (e,opacity,color) {
 
 // Passing "argument" into handler
 nav.addEventListener("mouseover", function(e){
-  handleHover(e, 0.5, "#e9bcbc");
+  handleHover(e, 0.5, "#d27979");
 });
 nav.addEventListener("mouseout", function (e) {
   handleHover(e, 1,'#333');

@@ -18,11 +18,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" media="(screen and max-width:1200px)" href="css/mobile.css"> -->
   <title>Clinton Joy || Frontend Dev || Tech Writer</title>
 </head>
 <body>
-  <header>
-    <nav class="nav container">
+  <header >
+    <nav class="nav ">
        <h3>Clinton</h3>
         <ul class="nav__links">
           <li class="nav__item">
@@ -51,10 +52,11 @@
       </div>
   </header>
 
-    <section class="section" id="section--1">
+    <section class="section  " id="section--1">
       <div class="section__title">
         <h2 class="section__description"> About Me</h2><script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 <lord-icon
+class="icon"
     src="https://cdn.lordicon.com/dxjqoygy.json"
     trigger="loop"
     colors="primary:#fff,secondary:#fff"
@@ -62,7 +64,7 @@
 </lord-icon>
       </div>
       <div class="about-body container">
-        <img src="./img/B735197B-4927-4107-AB56-D62E88D05E95.jpeg" alt="">
+        <img src="./img/profile.jpeg" alt="">
         <div class="about-text">
           <p> I am a front-end developer, I love to build interactive, responsive and user-friendly websites. I am passionate about transforming designs to code. I am also a Technical writer, i love to read, i love learn and i love to code. i am currrently learning react native and i hope to add it to my stack soon </p>
           <h3>MY current tech stack</h3>
@@ -71,6 +73,7 @@
             <li>CSS <i class="fab fa-css3-alt fa-2x"></i></li>
             <li>SASS<i class="fab fa-sass fa-2x"></i></li>
             <li>JAVASCRIPT<i class="fab fa-square-js fa-2x"></i></li>
+            
             <li>GIMP<i class="fas fa-pen-ruler fa-2x"></i></li>
             <li>HASHNODE<i class="fab fa-hashnode fa-2x"></i></li>
           </ul>
@@ -83,6 +86,7 @@
       <div class="section__title">
         <h2 class="section__description"> My Projects</h2><script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 <lord-icon
+class="icon"
     src="https://cdn.lordicon.com/ochimkct.json"
     trigger="loop"
     colors="primary:#121331,secondary:#08a88a"
@@ -90,7 +94,8 @@
 </lord-icon>
       </div>
       <div class=" project project-1">
-      <img src="./img/Screenshot 2022-10-20 at 15.26.22.png" alt="">
+      <img src="./img/advice.png" 
+      class="lazy-img" alt="">
       <div class="project-text">
 <h3>Advice Application</h3>
 <p>This application generate a new piece of advice by clicking the dice icon i built it with Semantic HTML5 markup,CSS custom properties, Flexbox and Javascript using an API. It is fully responsive on all screen sizes
@@ -101,8 +106,51 @@
 </div>
       </div>
       </div>
+
+      <div class="line"></div>
       <div class=" project project-2">
-      <img src="./img/Screenshot 2022-10-20 at 19.23.35.png" alt="">
+      <img src="./img/calculator-lazy.png"alt="" 
+      
+      class="lazy-img" >
+      <div class="project-text">
+<h3> Calculator Application</h3>
+<p>A simple calculator application that carry out simple arithmetical operation, with the Lumus button you can change to a light theme and a Nox botton is revealed which can be used to toogle back to the Dark theme. This application was crated using HTML5 CSS3 and vanila JavaScript</p>
+<div class="project-btn">
+  <button class="btn">Live Page</button>
+  <button class="btn">View Source</button>
+</div>
+      </div>
+      </div>
+      <div class=" project project-2">
+      <img src="./img/calculator-lazy.png"alt="" 
+      
+      class="lazy-img" >
+      <div class="project-text">
+<h3> Calculator Application</h3>
+<p>A simple calculator application that carry out simple arithmetical operation, with the Lumus button you can change to a light theme and a Nox botton is revealed which can be used to toogle back to the Dark theme. This application was crated using HTML5 CSS3 and vanila JavaScript</p>
+<div class="project-btn">
+  <button class="btn">Live Page</button>
+  <button class="btn">View Source</button>
+</div>
+      </div>
+      </div>
+      <div class=" project project-2">
+      <img src="./img/calculator-lazy.png"alt="" 
+      
+      class="lazy-img" >
+      <div class="project-text">
+<h3> Calculator Application</h3>
+<p>A simple calculator application that carry out simple arithmetical operation, with the Lumus button you can change to a light theme and a Nox botton is revealed which can be used to toogle back to the Dark theme. This application was crated using HTML5 CSS3 and vanila JavaScript</p>
+<div class="project-btn">
+  <button class="btn">Live Page</button>
+  <button class="btn">View Source</button>
+</div>
+      </div>
+      </div>
+      <div class=" project project-2">
+      <img src="./img/calculator-lazy.png"alt="" 
+      
+      class="lazy-img" >
       <div class="project-text">
 <h3> Calculator Application</h3>
 <p>A simple calculator application that carry out simple arithmetical operation, with the Lumus button you can change to a light theme and a Nox botton is revealed which can be used to toogle back to the Dark theme. This application was crated using HTML5 CSS3 and vanila JavaScript</p>
@@ -120,6 +168,7 @@
         <h2 class="section__description"> My Articles </h2>
         <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 <lord-icon
+class="icon"
     src="https://cdn.lordicon.com/nocovwne.json"
     trigger="loop"
     style="width:70px;height:70px">
@@ -133,19 +182,26 @@
 <div class="item-text">
 <div class="item-text-wrap">
 
-<h2 class="item-text-title">Great gradient</h2>
+<h2 class="item-text-title">JavaScript Just-In-Time Compilation</h2>
+<p class="item-text-category">Just in time compilation (JIT) is a hybrid of compilation and interpretation that converts all of the source code into machine code before immediately executing it. Because of this, we can compile ahead of time, but there isn't a portable file to run, therefore execution occurs right away.</p>
+
+<button class="btn">read more</button>
 
 </div>
 </div>
   </div>
   <div class="item">
 <div class="item-image">
-  <img src="./img/Screenshot 2022-10-20 at 15.27.08.png"style="height: 100%;" alt="">
+  <img src="./img/EC-article.jpg"style="height: 100%;" alt="">
 </div>
 <div class="item-text">
 <div class="item-text-wrap">
 
-<h2 class="item-text-title">Great gradient</h2>
+<h2 class="item-text-title">JavaScript Execution Context</h2>
+<br>
+<p class="item-text-category">The JavaScript execution context is the environment in which JavaScript code may be run. The execution context tells which part of the code can use the code's functions, variables, and objects.</p>
+<button class="btn">Read more</button>
+
 
 </div>
 </div>
@@ -167,13 +223,13 @@ class="icon"
       </div>
 <div class="contact-body container">
   <div class="contact-info">
-<h3>Contact Information</h3>
+<h3>Contact Information </h3>
 
 <ul>
   <li class="contact contact-shadow"><a  href="tel:+2349024221562"><i class="fas fa-phone fa-2x"></i> <span> +234 902 4221 562</span> </a> </li>
   <li class="contact contact-shadow"><a href="mailto:clintonjoyfimie@gmail.com"> <i class="fas fa-envelope fa-2x"></i> <span>clintonjoyfimie@gmail.com</span> </a> </li>
 </ul>
-<h3>Social Media</h3>
+<h3>Media Platforms</h3>
 
 <ul>
   <li class="contact contact-shadow"><a href="https://www.linkedin.com/in/clinton-joy-538804244" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i>
@@ -181,9 +237,11 @@ class="icon"
   <li class="contact contact-shadow"><a href="https://twitter.com/clintonjoy10" target="_blank"><i class="fab fa-twitter fa-2x"></i><span>ClintonJoy10</span> </a></li>
   <li class="contact contact-shadow"><a href="https://github.com/cejay101"
             target="_blank"><i class="fab fa-github fa-2x"></i><span>Cejay101</span></a></li>
+  <li class="contact contact-shadow"><a href="https://github.com/cejay101"
+            target="_blank"><i class="fab fa-github fa-2x"></i><span>Cejay101</span></a></li>
 </ul>
   </div>
-<div class="contact-message">
+<div class="contact-message ">
   <form action="">
 <div class="input-field">
   <input class="contact-shadow" type="text" name="text" placeholder="Full Name" id="">
@@ -191,7 +249,8 @@ class="icon"
 </div>
 <input class="contact-shadow" type="email" name="email" placeholder="Email Address" id="">
 <textarea class="contact-shadow"name="" id="" cols="30" placeholder="Your  Message" rows="10"></textarea>
-<button class="contact-shadow">SUBMIT</button>
+<input name="button" class="contact-shadow contact-submit" placeholder="Submit">
+
   </form>
 </div>
 </div>

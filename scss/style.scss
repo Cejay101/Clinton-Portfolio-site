@@ -16,7 +16,7 @@ body {
 .container {
   margin: auto;
 
-  width: $Web-width;
+  max-width: $Web-width;
 }
 
 a {
@@ -34,9 +34,10 @@ h4 {
   text-transform: uppercase;
 }
 
-h2, .icon {
+h2,
+.icon {
   font-size: 2.5rem;
-  // padding-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -63,38 +64,42 @@ img {
 
 // Header
 header {
-
+  height: 100vh;
+  
   //Nav
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(200, 145, 145, 0.903);
+    width: 100%;
     position: sticky;
-    top: 0;
-
-
-
+    z-index: 100;
+    h3 {
+      // font-size: 2rem;
+      padding-left: 1rem;
+    }
     ul {
       display: flex;
-
+      
       .nav__item {
         padding: 1rem;
       }
-
+      
       li a:hover {
         border-bottom: 3px $primary-color solid;
-
+        
       }
     }
   }
-
+  
   .header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: $background-img no-repeat center center/cover;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
     h1 {
@@ -117,17 +122,22 @@ header {
   .about-body {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
+    // flex-direction: column;
 
     img {
-      height: 500px;
-      width: 450px;
+
+      height: 400px;
+      // width: 350px;
       border-radius: 50%;
     }
 
     .about-text {
-      padding: 80px;
+      margin: 40px 10px 180px 30px;
       font-size: 20px;
+      // width: 100%;
+
+
 
       h3 {
         padding-top: 40px;
@@ -135,10 +145,14 @@ header {
 
       ul {
         display: flex;
-        padding-top: 1rem;
+        flex-flow: wrap;
+        padding: 1rem 0;
+        column-gap: 2rem;
+
 
         li {
-          padding-right: 2rem;
+          display: flex;
+          flex-direction: column;
         }
       }
 
@@ -155,11 +169,14 @@ header {
     padding: 2rem;
     margin: auto;
     height: 100%;
+    width: 100vw;
 
     width: $Web-width;
 
+    .line {}
+
     .project-text {
-      padding: 0 6rem;
+      padding-left: 2rem;
 
       h3 {
         padding-bottom: 1.5rem;
@@ -174,20 +191,26 @@ header {
     //project one 
   }
 
+  img {
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+  }
+
   .project-1 {
-    img {
-      height: 300px;
-      width: 600px;
-      border-radius: 10px;
-    }
+    // img {
+    //   height: 300px;
+    //   width: 600px;
+    //   border-radius: 10px;
+    // }
   }
 
   .project-2 {
-    img {
-      height: 390px;
-      width: 650px;
-      border-radius: 10px;
-    }
+    // img {
+    //   height: 390px;
+    //   width: 650px;
+    //   border-radius: 10px;
+    // }
   }
 
 
@@ -221,7 +244,7 @@ header {
     position: absolute;
     display: block;
     background: inherit;
-    opacity: 0.7;
+    opacity: 0.92;
     top: 0;
     left: 0;
     width: 100%;
@@ -306,26 +329,36 @@ header {
 
   &-text-category {
 
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    opacity: 0.7;
+    // text-transform: uppercase;
+    font-size: 1.4rem;
+    // opacity: 0.7;
     margin: 0;
+  }
+
+  .btn {
+    background-color: $light-color;
+    color: $primary-color;
+    border: 4px dotted $primary-color;
   }
 }
 
 // CONTACT
-#section--4{
+#section--4 {
   color: #fff;
   background-color: $primary-color;
 }
-.section__title{
+
+.section__title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .contact-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  // max-width: 100rem;
+  column-gap: 10rem;
 
   .contact-shadow {
     border: 2px dotted $primary-color;
@@ -333,83 +366,121 @@ header {
   }
 
   .contact-info {
-    width: 40%;
+    width: 80%;
+    // max-width: 100%;
+    padding-top: 2rem;
+  }
 
-    h3 {
-      text-align: center;
-      padding-bottom: 1.1rem;
-    }
+  .contact-message {
+    width: 100%;
+  }
 
-    .contact {
-      width: 100%;
-      height: 3rem;
-      background-color: white;
-      margin-bottom: 1rem;
-      color: $dark-color;
+  h3 {
+    text-align: center;
+    padding-bottom: 1.1rem;
+  }
+
+  .contact {
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    color: $dark-color;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+
+    a {
       display: flex;
       align-items: center;
-      padding-left: 2rem;
+      font-size: 1rem;
 
-      a {
-        display: flex;
-        align-items: center;
-        font-size: 1rem;
-
-        span {
-          padding-left: 1rem;
-          font-size: 1.2rem;
-        }
+      span {
+        padding-left: 1rem;
+        font-size: 1.2rem;
       }
     }
-  }
-
-  form {
-    margin-top: 2rem;
-
- 
-    input,
-    textarea,
-    button {
-      display: block;
-      width: 36rem;
-      margin-bottom: 1.5rem;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-     
-      padding: 1rem 2rem;
-
-      &::placeholder {
-        // padding: 1rem;
-        color: $medium-color;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 0.9rem;
-        letter-spacing: 1.5px;
-      }
-      
-
-    }
-    input:focus ,textarea:focus{
-      outline: green;
-    }
-    textarea {
-      height: 12rem;
-      resize: none;
-    }
-
-    button {
-      font-size: 1.5rem;
-      height: 4.5rem;
-      width: 100%;
-      color: $primary-color;
-      font-weight: 800;
-      background-color: #ffffff;
-
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-
   }
 }
+
+form {
+  margin-top: 2rem;
+  width: 90%;
+
+
+  input,
+  textarea,
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    padding: 1rem 2rem;
+
+    &::placeholder {
+      // padding: 1rem;
+      color: $medium-color;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+    }
+
+
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: green;
+  }
+
+  textarea {
+    height: 12rem;
+    resize: none;
+  }
+
+  .contact-submit {
+    height: 3rem;
+
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    &::placeholder {
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+
+}
+
 
 footer {
   text-align: center;
   padding: 2rem;
 }
+
+///hide
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem) ;
+  // transition: translat 3s forwards;
+  //  @keyframes translat { from{}
+    
+  //  }
+
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
+
+//Sticky nav
+.sticky {
+  position: fixed
+}
+
+
+//media queries
+@import 'mobile';

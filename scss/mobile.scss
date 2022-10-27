@@ -1,0 +1,74 @@
+//Tablet and small
+@media(max-width:1200px) {
+.container {
+    margin: auto;
+
+    max-width: 1000px;
+  }
+header{
+  .header-content{
+h1 {
+    font-size: 3rem;
+    margin-top:10% ;
+  }
+  height: 100vh;
+  } 
+}
+#section--1{
+  .about-body {
+    display: flex;
+    flex-direction: column;
+    img{
+      margin: auto;
+      width: 400px;
+    }
+  }
+}
+#section--2 {
+.project{
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  .project-text {
+    h3{
+      text-align: center;
+      padding-top: 2rem;
+    }
+      padding: 0 1rem;
+    }
+
+} 
+}
+#section--3{
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+#section--4{
+
+ 
+}
+
+}
+
+
+  
+  @media(max-width:500px){ 
+    header {
+        .header-content {
+          h1 {
+            font-size: 1.5rem;
+            margin-top: 10%;
+          }
+    
+          height: 60vh;
+        }
+      }
+    
+      
+    }
+  

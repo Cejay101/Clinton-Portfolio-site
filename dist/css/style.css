@@ -11,7 +11,6 @@ body {
   line-height: 1.6; }
 
 .container {
-  margin: auto;
   max-width: 1000px; }
 
 a {
@@ -54,7 +53,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(200, 145, 145, 0.903);
+    background-color: rgba(165, 145, 200, 0.903);
     width: 100%;
     position: sticky;
     z-index: 100; }
@@ -107,8 +106,8 @@ header {
   height: 5px;
   background-color: rgba(117, 111, 111, 0.17);
   border-radius: 1000000%;
-  width: 1000px;
-  margin: auto; }
+  width: 400px;
+  margin: 1rem auto; }
 
 #section--2 .project {
   display: flex;
@@ -325,7 +324,10 @@ footer {
         padding-top: 2rem; }
   #section--3 .items {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  #section--4 .contact-body {
+    flex-direction: column;
+    margin: auto; } }
 
 @media (max-width: 500px) {
   header .header-content {

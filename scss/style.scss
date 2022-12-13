@@ -5,6 +5,7 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  margin: auto;
+  // margin: auto;
 
   max-width: $Web-width;
 }
@@ -71,7 +72,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(200, 145, 145, 0.903);
+    background-color: rgba(165, 145, 200, 0.903);
     width: 100%;
     position: sticky;
     z-index: 100;
@@ -168,8 +169,8 @@ header {
     height: 5px;
     background-color:rgba(117, 111, 111, 0.17);
     border-radius: 1000000%;
-    width: 1000px;
-    margin: auto;
+    width: 400px;
+    margin: 1rem auto;
   }
   .project {
     display: flex;

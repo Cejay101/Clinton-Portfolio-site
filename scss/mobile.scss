@@ -49,8 +49,11 @@ h1 {
 }
 }
 #section--4{
+  .contact-body{
 
- 
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 }

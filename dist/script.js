@@ -5,6 +5,7 @@
 const nav = document.querySelector("nav");
 const section1 = document.getElementById('section--1')
 const header = document.querySelector('header')
+const hamburger =document.querySelector('.hamburger')
 const handleHover = function (e,opacity,color) {
   if (e.target.classList.contains("nav__link")) {
     const link = e.target;
@@ -158,3 +159,21 @@ const navHeight = nav.getBoundingClientRect().height
     imgLoading.observe(img)
 
     )
+
+    // Hamburger Menu
+    // function background(x) {
+    //   if (x.matches) {
+    //     document.body.style.backgroundColor = "gray";
+    //     document.body.style.color = "white";
+        
+    //     hamburger.style.display='block'
+    //     nav.style.display='block'
+    //   } else {
+    //     document.body.style.backgroundColor = "#292929";
+    //     hamburger.style.display='none'
+       
+    //   }
+    // }
+    // let x = window.matchMedia("(max-width:500px)");
+    // background(x);
+    // x.addListener(background);

@@ -69,7 +69,8 @@ header {
     position: sticky;
     z-index: 100; }
     header nav h3 {
-      padding: 0.5rem; }
+      font-size: 1.5rem;
+      padding: 0.6rem; }
     header nav input[type="checkbox"],
     header nav .hamburger-lines {
       display: none; }
@@ -84,7 +85,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../img/background.jpg") no-repeat center center/cover;
+    background: url("../img /background.jpg") no-repeat center center/cover;
     height: 100%;
     width: 100vw; }
     header .header-content h1 {
@@ -311,7 +312,7 @@ footer {
   header nav {
     display: block;
     position: relative;
-    height: 64px; }
+    height: 50px; }
     header nav input[type="checkbox"],
     header nav .hamburger-lines {
       display: block; }
@@ -337,9 +338,9 @@ footer {
       justify-content: space-between; }
       header nav .hamburger-lines .line {
         display: block;
-        height: 3px;
-        width: 100%;
-        border-radius: 10px;
+        height: 2px;
+        width: 80%;
+        border-radius: 20px;
         background: #333; }
       header nav .hamburger-lines .line1 {
         transform-origin: 0% 0%;
@@ -366,9 +367,9 @@ footer {
         font-size: 1.3rem;
         font-weight: 500; }
     header nav h3 {
-      position: absolute;
       right: 15px;
-      font-size: 1.8rem; }
+      font-size: 1.5rem;
+      opacity: 0.8; }
     header nav input[type="checkbox"]:checked ~ .nav__links {
       transform: translateX(0); }
     header nav input[type="checkbox"]:checked ~ .hamburger-lines .line1 {

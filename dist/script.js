@@ -1,31 +1,30 @@
-'use strict'
-
+"use strict";
 
 //Nav hover effect
 const nav = document.querySelector("nav");
-const section1 = document.getElementById('section--1')
-const header = document.querySelector('header')
-const hamburger =document.querySelector('.hamburger')
-const handleHover = function (e,opacity,color) {
+const section1 = document.getElementById("section--1");
+const header = document.querySelector("header");
+const hamburger = document.querySelector(".hamburger");
+const handleHover = function (e, opacity, color) {
   if (e.target.classList.contains("nav__link")) {
     const link = e.target;
     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
-    const logo = link.closest(".nav").querySelector('h2');
+    const logo = link.closest(".nav").querySelector("h2");
     link.style.color = color;
 
     siblings.forEach((el) => {
       if (el !== link) el.style.opacity = opacity;
-      });
-      logo.style.opacity = opacity;
+    });
+    logo.style.opacity = opacity;
   }
 };
 
 // Passing "argument" into handler
-nav.addEventListener("mouseover", function(e){
+nav.addEventListener("mouseover", function (e) {
   handleHover(e, 0.5, "#fff");
 });
 nav.addEventListener("mouseout", function (e) {
-  handleHover(e, 1,'#333');
+  handleHover(e, 1, "#333");
 });
 
 //TypeWriter effect
@@ -105,7 +104,6 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   }
 });
 
-
 //Revealing Sections
 const allSections = document.querySelectorAll(".section");
 
@@ -120,7 +118,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.05,
 });
 
 allSections.forEach(function (section) {
@@ -129,51 +127,55 @@ allSections.forEach(function (section) {
 });
 
 //Sticky Nav
-const navHeight = nav.getBoundingClientRect().height
+const navHeight = nav.getBoundingClientRect().height;
 
- const stickyAdd =function(entries){
-  const [entry]=entries;
+const stickyAdd = function (entries) {
+  const [entry] = entries;
   // nav.classList.add('sticky')
-  if(entry.isIntersecting) nav.classList.remove ("sticky");
-  else{
-  nav.classList.add("sticky");}
- }
- const headerObserver = new IntersectionObserver
- (stickyAdd, { root:null, threshold:0,rootMargin:`-${navHeight}px`,})
-  headerObserver.observe(header)
- 
-  //Lazy loading
+  if (entry.isIntersecting) nav.classList.remove("sticky");
+  else {
+    nav.classList.add("sticky");
+  }
+};
+const headerObserver = new IntersectionObserver(stickyAdd, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
 
-  const img = document.querySelectorAll('.lazy-img');
+//Lazy loading
 
-  const lazyloading = function(entries, observer){
-    const [entry]=entries
-    console.log(entry);
-    if(!entry.isIntersecting) return;
-      entry.target.classList.remove('lazy-img');
-      observer.unobserve(entry.target)
-  } 
+const img = document.querySelectorAll(".lazy-img");
 
-  const imgLoading = new IntersectionObserver(lazyloading,{root:null,threshold:1})
-  img.forEach(img=> 
-    imgLoading.observe(img)
+const lazyloading = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("lazy-img");
+  observer.unobserve(entry.target);
+};
 
-    )
+const imgLoading = new IntersectionObserver(lazyloading, {
+  root: null,
+  threshold: 1,
+});
+img.forEach((img) => imgLoading.observe(img));
 
-    // Hamburger Menu
-    // function background(x) {
-    //   if (x.matches) {
-    //     document.body.style.backgroundColor = "gray";
-    //     document.body.style.color = "white";
-        
-    //     hamburger.style.display='block'
-    //     nav.style.display='block'
-    //   } else {
-    //     document.body.style.backgroundColor = "#292929";
-    //     hamburger.style.display='none'
-       
-    //   }
-    // }
-    // let x = window.matchMedia("(max-width:500px)");
-    // background(x);
-    // x.addListener(background);
+// Hamburger Menu
+// function background(x) {
+//   if (x.matches) {
+//     document.body.style.backgroundColor = "gray";
+//     document.body.style.color = "white";
+
+//     hamburger.style.display='block'
+//     nav.style.display='block'
+//   } else {
+//     document.body.style.backgroundColor = "#292929";
+//     hamburger.style.display='none'
+
+//   }
+// }
+// let x = window.matchMedia("(max-width:500px)");
+// background(x);
+// x.addListener(background);
